@@ -50,7 +50,7 @@ class DataHandling:
 			self.df = self.df[cols]
 		else:
 			return False
-
+		
 	def handle_missing_values(self):
 		self.df = self.df.dropna(subset = ["Year", "Month", "Day"])
 		
